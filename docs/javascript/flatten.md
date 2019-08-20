@@ -1,30 +1,26 @@
-# 数组扁平化
+# 数组扁平化与去重
 
-## 递归方式
+## 数组扁平化
 
-### 1. forEach
+### 递归方式
 
-```javascript
-const flatten = (arr) => {
-    let res = [];
-    arr.forEach((item) => {
-        if (Array.isArray(item)) {
-            res = res.concat(flatten(item));
-        } else {
-            res.push(item);
-        }
-    })；
-    return res;
-}；
-```
-
-测试一下：
+#### 采用 forEach
 
 ```javascript
-let arr = [1, 2, [3, 4],  [5, 12, [24, 12, [11]]]];
-console.log(flatten(arr));
+const flatten = arr => {
+  let res = [];
+  arr.forEach(item => {
+    if (Array.isArray(item)) {
+      res = res.concat(flatten(item));
+    } else {
+      res.push(item);
+    }
+  });
+  return res;
+};
 
-----------------------------------
-输出：
-[1, 2, 3, 4, 5, 12, 24, 12, 11]
+let arr = [1, 2, [3, 4], [5, 12, [24, 12, [11]]]];
+console.log(flatten(arr)); // arr => [1, 2, 3, 4, 5, 12, 24, 12, 11]
 ```
+
+[在 JS Bin 上查看这段代码](http://js.jirengu.com/seveb/1/edit?js,console)

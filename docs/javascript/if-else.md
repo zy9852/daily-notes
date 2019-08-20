@@ -48,15 +48,37 @@ air && (type = getType());
 ```javascript
 const getType = {
     'air': {
-        'jie_ji': () => {  // do something... },
-        'song_ji': () => {  // do something... ),
+        'pickUp': () => {
+            // do something...
+        },
+        'dropOff': () => {
+             // do something...
+        },
     },
     'train': {
-        'jie_zhan': () => { // do something... },
-        'song_zhan': () => { // do something... },
+        'pickUp': () => {
+             // do something...
+        },
+        'dropOff': () => {
+            // do something...
+        },
      }
  }
 
  // 接下来可以根据业务做其他处理
  ....
 ```
+
+## indexOf()判断数组
+
+使用场景：例如需要判断页面的来源是否为 `pageA` 或者 `pageB` 或者 `pageC`
+
+```javascript
+let check = ['pageA', 'pageB', 'pageC'];
+if (check.indexOf(from) !== -1) {
+  // 来源符合
+  // do something...
+}
+```
+
+虽然使用这种方式依旧含有 `if` 判断，但是某种程度上减少了 `if/else` 的连续判断，不满足条件时提前 `return`，这样不仅能提高代码的可阅读性，同时也能优化代码的性能

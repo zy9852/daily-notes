@@ -5,5 +5,5 @@
 ### 主要内容
 
 1. [if-else 的一些替换写法](if-else)
-2. [数组扁平化](flatten)
+2. [数组扁平化与去重](flatten)
 3. [setTimeout 用法理解](setTimeout)

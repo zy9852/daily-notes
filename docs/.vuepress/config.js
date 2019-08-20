@@ -3,7 +3,7 @@ module.exports = {
     nav: [
       { text: '主页', link: '/' },
       {
-        text: '学习笔记',
+        text: '学习',
         items: [
           { text: 'javascript', link: '/javascript/' },
           { text: 'css', link: '/css/' },
