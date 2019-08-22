@@ -46,3 +46,7 @@ const flatten = arr => {
 ```
 
 使用`toString()`有很大的局限性，此方式只适用于数组元素为`Number`类型和`String`类型,当然元素为`string`时，直接 `arr.toString()`就能实现了。[在 JS Bin 上查看这段代码](http://js.jirengu.com/dezuk/1/edit?js,console)
+
+::: danger 待更新
+还有一部分没有总结
+:::

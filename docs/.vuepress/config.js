@@ -1,4 +1,5 @@
 module.exports = {
+  title: 'Daily Book',
   themeConfig: {
     nav: [
       { text: '主页', link: '/' },
@@ -18,5 +19,8 @@ module.exports = {
     sidebar: 'auto',
     sidebarDepth: 3,
     lastUpdated: 'Last Updated'
+  },
+  markdown: {
+    lineNumbers: true
   }
 };
