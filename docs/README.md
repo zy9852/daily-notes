@@ -8,9 +8,9 @@
 
 - 基础篇
 
-1. [if-else 的替换写法](/javascript/if-else.md)
-2. [数组扁平化与去重](/javascript/flatten.md)
-3. [setTimeout 用法理解](/javascript/setTimeout.md)
+1. [if-else 的替换写法](/docs/javascript/if-else.md)
+2. [数组扁平化与去重](/docs/javascript/flatten.md)
+3. [setTimeout 用法理解](/docs/javascript/setTimeout.md)
 
 - 进阶篇
 
@@ -23,7 +23,7 @@
 
 ## **CSS**
 
-1. [BFC what? & how?](/css/BFC.md)
+1. [BFC what? & how?](/docs/css/BFC.md)
 
 ## **Vue.js**
 
@@ -39,7 +39,7 @@
 ## 前端网络知识
 
 1. 从浏览器输入 url 发生了什么
-2. [正向代理与反向代理](/network/proxy.md)
+2. [正向代理与反向代理](/docs/network/proxy.md)
 3. 浏览器缓存机制
 
 ## Node.js
