@@ -24,10 +24,12 @@
 ## **CSS**
 
 1. [BFC what? & how?](/docs/css/BFC.md)
+2. [div 水平垂直居中](/docs/css/divCenter.md)
 
 ## **Vue.js**
 
-## **git命令**
+## **git 命令**
+
 [移步此处](https://github.com/zy9852/git-test)
 
 ## 调试工具
