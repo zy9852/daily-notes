@@ -14,7 +14,7 @@
 
 - 进阶篇
 
-1. [call & apply & bind](/docs/call.md)
+1. [call & apply & bind](/docs/javascript/call.md)
 2. 深拷贝、浅拷贝
 3. 深度理解 setTimeout()
 4. 作用域、闭包
