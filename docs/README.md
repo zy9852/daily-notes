@@ -14,12 +14,13 @@
 
 - 进阶篇
 
-1. 深拷贝、浅拷贝
-2. 深度理解 setTimeout()
-3. 作用域、闭包
-4. 事件循环
-5. promise
-6. async 和 await
+1. [call & apply & bind](/docs/call.md)
+2. 深拷贝、浅拷贝
+3. 深度理解 setTimeout()
+4. 作用域、闭包
+5. 事件循环
+6. promise
+7. async 和 await
 
 ## **CSS**
 
