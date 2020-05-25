@@ -1,26 +1,53 @@
 module.exports = {
-  title: 'Daily Book',
+  title: "Daily Book",
+  description: "just a daily notesbook.",
   themeConfig: {
     nav: [
-      { text: '主页', link: '/' },
+      { text: "主页", link: "/" },
       {
-        text: '学习',
+        text: "学习",
         items: [
-          { text: 'javascript', link: '/javascript/' },
-          { text: 'css', link: '/css/' },
-          { text: 'vue', link: '/vue/' },
-          { text: '前端调试', link: '/devTools/' },
-          { text: 'git', link: '/git/' }
-        ]
+          { text: "javascript", link: "/javascript/" },
+          { text: "css", link: "/css/" },
+          { text: "vue", link: "/vue/" },
+          { text: "前端调试", link: "/devTools/" },
+          { text: "git", link: "/git/" },
+        ],
       },
-      { text: '关于', link: '/about/' },
-      { text: 'Github', link: 'https://github.com/zy9852/daily-notes' }
+      { text: "关于", link: "/about/" },
+      { text: "Github", link: "https://github.com/zy9852/daily-notes" },
     ],
-    sidebar: 'auto',
-    sidebarDepth: 3,
-    lastUpdated: 'Last Updated'
+    sidebar: [
+      {
+        title: "CSS基础",
+        path: "/css/",
+        children: ["/css/BFC", "/css/divCenter"],
+      },
+      {
+        title: "JS基础",
+        path: "/js/",
+        children: ["/js/base", "/js/call", "/js/copy", "/js/if-else"],
+      },
+      {
+        title: "VUE",
+        path: "/vue/",
+        children: ["/vue/base"],
+      },
+      {
+        title: "网络基础",
+        path: "/network/",
+        children: ["/network/base", "/network/proxy"],
+      },
+      {
+        title: "算法",
+        path: "/algorithm/",
+        children: ["/algorithm/unique", "/algorithm/flatten"],
+      },
+    ],
+    sidebarDepth: 1,
+    lastUpdated: "Last Updated",
   },
   markdown: {
-    lineNumbers: true
-  }
+    lineNumbers: true,
+  },
 };

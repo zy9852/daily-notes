@@ -19,13 +19,14 @@ BFC（Block Formatting Context): 块格式化上下文。引用 MDN 上的定义
 ## BFC 的特性与应用
 
 ### 1. 让浮动内容与周围的内容等高（清除浮动）
-![](media/bfc/1.jpg "未清除浮动")
+
+![](./media/bfc/1.jpg "未清除浮动")
 
 这个例子中，我们让`.float`元素浮动，`.wrap`元素的内容已经在浮动元素的周围浮动起来，因为浮动元素比其他元素高，所以浮动元素超出了外部的`div`，脱离了文档流。[在此查看实例代码](http://js.jirengu.com/wofuwugopo/1/watch?html,css,output)
 
 要想使得`.wrap`元素能包含浮动元素，也就是我们常说的清除浮动，达到如此效果：
 
-![](media/bfc/2.jpg "清除浮动")
+![](./media/bfc/2.jpg "清除浮动")
 
 想要创建一个会包含这个浮动的 BFC，通常的做法是设置`.wrap`元素`overflow: hidden`或`overflow: auto`。[在此处查看更新后的实例代码](http://js.jirengu.com/wugah/2/watch?html,css,output)
 
@@ -33,6 +34,6 @@ BFC（Block Formatting Context): 块格式化上下文。引用 MDN 上的定义
 
 我们都知道在正常的文档流中，会出现外边距折叠的现象。在同一个 BFC 下的元素也会产生外边距折叠。但是 BFC 的特性之一便是 BFC 是一个独立的容器，也就不会影响到容器外的元素，所以创建两个不同的 BFC 可以解决外边距折叠的问题。[在此处查看代码](http://js.jirengu.com/jesut/1/watch?html,css,output)
 
-![](media/bfc/3.jpg "外边距塌陷")
+![](./media/bfc/3.jpg "外边距塌陷")
 
-![](media/bfc/4.jpg "去除外边距塌陷")
+![](./media/bfc/4.jpg "去除外边距塌陷")
