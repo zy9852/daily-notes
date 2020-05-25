@@ -1,6 +1,8 @@
 module.exports = {
   title: "Daily Book",
   description: "just a daily notesbook.",
+  base: "/daily-notes/",
+  dest: "public",
   themeConfig: {
     nav: [
       { text: "主页", link: "/" },
