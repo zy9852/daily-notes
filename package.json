@@ -1,10 +1,12 @@
 {
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "vuepress": "^1.0.3"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "deploy": "bash deploy.sh"
+    "deploy": "gh-pages -d docs/.vuepress/dist",
+    "deploy:build": "npm run docs:build && gh-pages -d docs/.vuepress/dist"
   }
 }

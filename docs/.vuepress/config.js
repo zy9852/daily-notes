@@ -2,8 +2,9 @@ module.exports = {
   title: "Daily Book",
   description: "just a daily notesbook.",
   base: "/daily-notes/",
-  dest: "public",
+  head: [["link", { rel: "icon", href: "/zhouyi.png" }]],
   themeConfig: {
+    logo: "/zhouyi.png",
     nav: [
       { text: "主页", link: "/" },
       {
@@ -47,7 +48,7 @@ module.exports = {
       },
     ],
     sidebarDepth: 1,
-    lastUpdated: "Last Updated",
+    lastUpdated: "最近更新",
   },
   markdown: {
     lineNumbers: true,

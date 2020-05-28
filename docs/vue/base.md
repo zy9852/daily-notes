@@ -1,4 +1,4 @@
-## vue 基础点
+# 基础概述
 
 ## MVVM
 
@@ -21,13 +21,13 @@ deadctivated: keep-alive 专属，组件被销毁时调用
 beforeDestroy： 组件销毁之前
 detroyed： 组件销毁后
 
-- created 与 mounted 两个钩子选用取决于是否依赖于 dom,若需要在请求数据的时候操作 dom 则需要将请求 放到 mounted 中.
+- created 与 mounted 两个钩子选用取决于是否依赖于 dom,若需要在请求数据的时候操作 dom 则需要将请求放到 mounted 中.
 - beforeDestroy 钩子可以用来清理定时器
 
 ## 组件通信
 
 1. 通过 props 自上而下传递数据，父组件传递给子组件
-2. \$emit 方法使得子组件传递数据到父组件
+2. `$emit` 方法使得子组件传递数据到父组件
 3. inject，注入依赖，适用于层级较深的组件
 4. vuex
 
