@@ -20,10 +20,23 @@
 
 ## var、 let、 const 的区别
 
-> **变量提升**：将变量声明提到当前作用域的顶部，可以在声明之前使用变量，_初始化不会提升_
+> **变量提升**：将变量声明提到当前作用域的顶部，可以在声明之前使用变量
 
-- let/const 定义的变量不会产生变量提升，而 var 会
-- 在相同作用域中 let/const 不允许重复声明，var 可以重复声明
+- var 定义的变量会产生变量提升，值为`undefined`，let、const 声明的变量不存在变量提升，变量只能在声明之后使用，否则报错`ReferenceError`
+  eg:
+
+```js
+function test() {
+  console.log(name);
+  console.log(age);
+  var name = "林更新";
+  let age = 18;
+}
+test();
+//  undefined, ReferenceError
+```
+
+- 在相同作用域中 let/const 不允许重复声明
 - const 声明变量必须赋初始值，且为只读的常量
 
 ## 堆内存与栈内存

@@ -10,11 +10,13 @@ module.exports = {
       {
         text: "学习",
         items: [
-          { text: "javascript", link: "/javascript/" },
+          { text: "javascript", link: "/js/" },
           { text: "css", link: "/css/" },
           { text: "vue", link: "/vue/" },
-          { text: "前端调试", link: "/devTools/" },
-          { text: "git", link: "/git/" },
+          { text: "计算机网络", link: "/network/" },
+          { text: "算法", link: "/algorithm/" },
+          // { text: "前端调试", link: "/devTools/" },
+          // { text: "git", link: "/git/" },
         ],
       },
       { text: "关于", link: "/about/" },
@@ -45,6 +47,11 @@ module.exports = {
         title: "算法",
         path: "/algorithm/",
         children: ["/algorithm/unique", "/algorithm/flatten"],
+      },
+      {
+        title: "开发记录",
+        path: "/notes/",
+        children: ["/notes/base"],
       },
     ],
     sidebarDepth: 1,
