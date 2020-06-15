@@ -18,6 +18,31 @@
 
 - Object [除了常用的 Object，还包含有**Array**，**Function**等]
 
+## 检测类型
+
+### typeof 操作符
+
+typeof 可能的返回值：
+
+- 'undefined' => 未定义
+- 'string' => 字符串
+- 'boolean' => 布尔值
+- 'number' => 数值
+- 'object' => 对象 或 **null**
+- 'function' => 函数
+
+> 调用 typeof null 返回'object'是因为 null 被认为是一个空的对象引用
+
+### instanceof 操作符
+
+typeof 可以很好地检测基本类型，但并不能检测出具体的对象属于什么类型.instanceof 用于检测不同类型的对象,检测基本类型会返回 false。
+
+    eg：
+
+    func instanceof Function => true, 是函数
+    obj instanceof Object => true, 是对象
+    reg instanceof RegExp => true, 是正则表达式
+
 ## var、 let、 const 的区别
 
 > **变量提升**：将变量声明提到当前作用域的顶部，可以在声明之前使用变量
