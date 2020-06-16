@@ -24,12 +24,19 @@ detroyed： 组件销毁后
 - created 与 mounted 两个钩子选用取决于是否依赖于 dom,若需要在请求数据的时候操作 dom 则需要将请求放到 mounted 中.
 - beforeDestroy 钩子可以用来清理定时器
 
+## 组件复用
+
+每使用一个组件，都会有一个单独的组件的新实例被创建，每个组件会分别维护自己的 data。
+
+> data 必须是一个函数，以保证每个实例可以单独维护一份所返回对象的独立拷贝。
+
 ## 组件通信
 
 1. 通过 props 自上而下传递数据，父组件传递给子组件
 2. `$emit` 方法使得子组件传递数据到父组件
-3. inject，注入依赖，适用于层级较深的组件
-4. vuex
+3. provide/inject，注入依赖，适用于层级较深的组件
+4. 子组件以`$emit('update:propName', newPropName )`的形式出发事件，父组件以`:update:propName= data.dataName = $event`或`:propName.sync=dataName`，**'.sync'不支持接收表达式**
+5. vuex
 
 ## vue 如何实现双向绑定
 
@@ -125,8 +132,10 @@ Vue.directive('btm-bar', function（el, binding）{
 
 ## vue 单向数据流
 
-vue 中数据是单向流动的，便于对数据进行追踪，避免数据混乱
-只能通过父组件更改 props 的数据，子组件不可更改父组件的 props，原因是：
+> 父级 prop 的更新会向下更新到子组件中，反之不行。
+
+原因：
+
 一个父组件不只一个子组件，props 数据并不只有一个子组件使用，若子组件修改，会导致数据混乱，将数据的源头统一为父组件，从而保证数据的修改源唯一。
 
 ## vue 父子组件生命周期执行顺序
